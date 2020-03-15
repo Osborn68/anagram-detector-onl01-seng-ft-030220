@@ -8,6 +8,7 @@ def initialize(word)
 end
 
 def match(array)
-  array.select
+  array.select {|word| (word.split("").sort) == (@word.split("").sort)}
+end
 
 end
